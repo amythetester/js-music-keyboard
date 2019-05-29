@@ -8,41 +8,21 @@ $(document).ready( function() {
     audio.play();
   });
 
-  // allows user to click on notes to create audible notes
-  $('button.note.a').click(function() {
-    const audio = document.getElementById('aAudio');
-    audio.play();
-  });
-
-  $('button.note.b').click(function() {
-    const audio = document.getElementById('bAudio');
-    audio.play();
-  });
-
-  $('button.note.c').click(function() {
-    const audio = document.getElementById('cAudio');
-    audio.play();
-  });
-
-  $('button.note.d').click(function() {
-    const audio = document.getElementById('dAudio');
-    audio.play();
-  });
-
-  $('button.note.e').click(function() {
-    const audio = document.getElementById('eAudio');
-    audio.play();
-  });
-
-  $('button.note.f').click(function() {
-    const audio = document.getElementById('fAudio');
-    audio.play();
-  });
-
-  $('button.note.g').click(function() {
-    const audio = document.getElementById('gAudio');
-    audio.play();
-  });
+  // click note helper function
+  const clickButton = function clickButton(note) {
+    $(`button.note.${note}`).click(function() {
+      const audio = document.getElementById(`${note}Audio`);
+      audio.play();
+    });
+  }
+  
+  clickButton('a');
+  clickButton('b');
+  clickButton('c');
+  clickButton('d');
+  clickButton('e');
+  clickButton('f');
+  clickButton('g');
 });
 
 
