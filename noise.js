@@ -1,34 +1,36 @@
 $(document).ready( function() {
   $('body').keydown(function(event) {
-    if (event.key === 'a') {
-      const aAudio = document.getElementById("aAudio");
-      aAudio.play();
+    const aAudio = document.getElementById("aAudio");
+    const bAudio = document.getElementById("bAudio");
+    const cAudio = document.getElementById("cAudio");
+    const dAudio = document.getElementById("dAudio");
+    const eAudio = document.getElementById("eAudio");
+    const fAudio = document.getElementById("fAudio");
+    const gAudio = document.getElementById("gAudio");
+
+    switch(event.key) {
+      case 'a': 
+        aAudio.play();
+        break;
+      case 'b':
+        bAudio.play();
+        break;
+      case 'c':        
+        cAudio.play();
+        break;
+      case 'd':        
+        dAudio.play();
+        break;
+      case 'e':        
+        eAudio.play();
+        break;
+      case 'f':        
+        fAudio.play();
+        break;
+      case 'g':        
+        gAudio.play();
     }
-    if (event.key === 'b') {
-      const aAudio = document.getElementById("bAudio");
-      aAudio.play();
-    }
-    if (event.key === 'c') {
-      const aAudio = document.getElementById("cAudio");
-      aAudio.play();
-    }
-    if (event.key === 'd') {
-      const aAudio = document.getElementById("dAudio");
-      aAudio.play();
-    }
-    if (event.key === 'e') {
-      const aAudio = document.getElementById("eAudio");
-      aAudio.play();
-    }
-    if (event.key === 'f') {
-      const aAudio = document.getElementById("fAudio");
-      aAudio.play();
-    }
-    if (event.key === 'g') {
-      const aAudio = document.getElementById("gAudio");
-      aAudio.play();
-    }
-  })
+  });
 });
 
 
