@@ -9,20 +9,20 @@ $(document).ready( function() {
   });
 
   // click note helper function
-  const clickButton = function clickButton(note) {
+  const clickedButton = function clickedButton(note) {
     $(`button.note.${note}`).click(function() {
       const audio = document.getElementById(`${note}Audio`);
       audio.play();
     });
   }
-  
-  clickButton('a');
-  clickButton('b');
-  clickButton('c');
-  clickButton('d');
-  clickButton('e');
-  clickButton('f');
-  clickButton('g');
+
+  clickedButton('a');
+  clickedButton('b');
+  clickedButton('c');
+  clickedButton('d');
+  clickedButton('e');
+  clickedButton('f');
+  clickedButton('g');
 });
 
 
