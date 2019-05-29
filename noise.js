@@ -5,6 +5,7 @@ $(document).ready( function() {
     const eventKey = event.key.toLowerCase();
     const audioKey = `${eventKey}Audio`;
     const audio = document.getElementById(audioKey);
+    audio.load();
     audio.play();
   });
 
@@ -12,6 +13,7 @@ $(document).ready( function() {
   const clickedButton = function clickedButton(note) {
     $(`button.note.${note}`).click(function() {
       const audio = document.getElementById(`${note}Audio`);
+      audio.load();
       audio.play();
     });
   }
